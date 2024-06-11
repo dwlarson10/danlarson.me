@@ -1,56 +1,85 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: url('img/background.webp') no-repeat center center fixed;
-    background-size: cover;
+    background-color: #fff;
     color: #333;
 }
 
-header {
+.container {
     display: flex;
-    justify-content: space-between;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    align-items: flex-start; /* Align items to the top */
+}
+
+.left-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items to the top */
     align-items: center;
+    text-align: center;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
-}
-
-.logo {
-    height: 50px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-nav li {
-    margin: 0 10px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-main {
-    padding: 20px;
+    position: relative;
 }
 
 .profile-pic {
-    width: 150px;
-    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    object-fit: cover;
+    margin-bottom: 20px;
 }
 
-section {
-    margin-bottom: 40px;
+.left-column p {
+    margin-bottom: auto; /* Push the paragraph to the top */
 }
 
-footer {
-    text-align: center;
+.social-links {
+    position: absolute;
+    bottom: -10px; /* Position links at the bottom */
+}
+
+.social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #0073e6;
+    font-weight: bold;
+}
+
+.right-column {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items to the top */
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    height: 100px; /* Approximately 1 inch */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card a {
+    text-decoration: none;
+    color: #0073e6;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    display: block;
 }

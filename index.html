@@ -3,33 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dan Larson's Portfolio</title>
+    <title>Dan Larson</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <img src="img/logo.webp" alt="Logo" class="logo">
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="https://medium.com/@your-medium-profile" target="_blank">Blog</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="about">
-            <h1>About Me</h1>
+    <main class="container">
+        <div class="left-column">
             <img src="img/me.jpg" alt="Dan Larson" class="profile-pic">
-            <p>Short bio goes here...</p>
-        </section>
-        <section id="portfolio">
-            <h1>Portfolio</h1>
-            <p>Details about your side projects go here...</p>
-        </section>
+            <p>I build analytics, data science, and AI tools for Labratories</p>
+            <div class="social-links">
+                <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+                <a href="https://github.com/yourprofile" target="_blank">GitHub</a>
+                <!-- Add other social media links here -->
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="card">
+                <a href="https://medium.com/@danlarson_74954/5-ways-to-enhance-your-ggplot-visualizations-7ecb044fa9d9" target="_blank">Enhancing you GGPLOTs</a>
+            </div>
+            <div class="card">
+                <a href="https://medium.com/@danlarson_74954/analyzing-nba-statistics-with-duckdb-11691bbf4864" target="_blank">Working with Duck DB</a>
+            </div>
+            <!-- Add more cards as needed -->
+        </div>
     </main>
-    <footer>
-        <p>&copy; 2024 Dan Larson. All rights reserved.</p>
-    </footer>
 </body>
 </html>
