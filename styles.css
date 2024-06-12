@@ -1,14 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff;
+    background-color: #f7f7f7; /* Cool off-white background */
     color: #333;
 }
 
 .container {
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
     padding: 20px;
     box-sizing: border-box;
     align-items: flex-start; /* Align items to the top */
@@ -38,14 +40,14 @@ body {
 }
 
 .social-links {
-    position: absolute;
-    bottom: -10px; /* Position links at the bottom */
+    margin-top: auto;
+    padding-bottom: 20px; /* Add padding to push links to the bottom */
 }
 
 .social-links a {
     margin: 0 10px;
     text-decoration: none;
-    color: #0073e6;
+    color: #5D689B;
     font-weight: bold;
 }
 
@@ -62,7 +64,7 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Added filter transition */
     margin-bottom: 20px;
     box-sizing: border-box;
     height: 100px; /* Approximately 1 inch */
@@ -73,11 +75,17 @@ body {
 
 .card:hover {
     transform: translateY(-5px);
+    background-color: #5D689B; /* Blue background on hover */
+    color: #fff; /* White text on hover */
+}
+
+.card:hover a {
+    color: #fff; /* Ensure the link text is white on hover */
 }
 
 .card a {
     text-decoration: none;
-    color: #0073e6;
+    color: #5D689B;
     font-weight: bold;
     width: 100%;
     text-align: center;
